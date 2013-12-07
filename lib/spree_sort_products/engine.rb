@@ -11,8 +11,8 @@ module SpreeSortProducts
       g.test_framework :rspec
     end
 
-    initializer :assets do |config|
-      Rails.application.config.assets.precompile += %w(admin/taxon_tree_menu_overrides admin/sort_products)
+    initializer "spree_sort_products.assets.precompile", :group => :all do |app|
+      app.config.assets.precompile += %w(admin/taxon_tree_menu_overrides admin/sort_products)
     end
 
     def self.activate
