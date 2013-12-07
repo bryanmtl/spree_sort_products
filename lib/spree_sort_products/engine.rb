@@ -12,7 +12,7 @@ module SpreeSortProducts
     end
 
     initializer "spree_sort_products.assets.precompile", :group => :all do |app|
-      app.config.assets.precompile += %w(admin/taxon_tree_menu_overrides admin/sort_products)
+      app.config.assets.precompile += %w(admin/taxon_tree_menu_overrides.js admin/sort_products.js)
     end
 
     def self.activate
