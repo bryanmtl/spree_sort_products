@@ -20,14 +20,7 @@ module Spree
       def load_taxon
         @taxonomy = Taxonomy.find(params[:taxonomy_id])
         @taxon = Taxon.find(params[:id])
-      end
-
-
-      private 
-
-      def 
-
-        
+      end        
     end
   end
 end
